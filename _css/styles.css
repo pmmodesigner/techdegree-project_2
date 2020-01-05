@@ -1,0 +1,48 @@
+* {
+    box-sizing: border-box;
+}
+
+/* Content blocks */
+
+.content {
+    margin: auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    width: 90%;
+    background: linear-gradient(150deg, rgba(225,232,177,1) 0%, rgba(255,255,255,1) 100%);
+    border: 1px solid #bfd330;
+    border-radius: 7.5px;
+    padding: 0 15px 0 15px;
+    font-family: 'Oxygen', sans-serif;
+    color: #172426;
+    line-height: 1.5em;
+}
+
+.top_banner {
+    text-align: center;
+    display: block;
+}
+
+.main-nav a {
+    padding: 10px;
+}
+
+.top_banner {
+    margin-top: 25px;
+}
+
+body {
+    background: linear-gradient(30deg, rgba(225,232,177,1) 0%, rgba(255,255,255,1) 100%);
+}
+
+h1 {
+    font-family: 'Bungee', cursive;
+    text-align: center;
+    font-size: 1.65em;
+}
+
+.footer {
+    font-family: 'Oxygen', sans-serif;
+    text-align: center;
+    padding-bottom: 25px;
+}
