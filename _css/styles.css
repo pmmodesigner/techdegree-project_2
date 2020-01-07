@@ -1,48 +1,573 @@
+/* Page-wide styles */
+
 * {
     box-sizing: border-box;
-}
-
-/* Content blocks */
-
-.content {
-    margin: auto;
-    margin-top: 25px;
-    margin-bottom: 25px;
-    width: 90%;
-    background: linear-gradient(150deg, rgba(225,232,177,1) 0%, rgba(255,255,255,1) 100%);
-    border: 1px solid #bfd330;
-    border-radius: 7.5px;
-    padding: 0 15px 0 15px;
-    font-family: 'Oxygen', sans-serif;
-    color: #172426;
-    line-height: 1.5em;
-}
-
-.top_banner {
-    text-align: center;
-    display: block;
-}
-
-.main-nav a {
-    padding: 10px;
-}
-
-.top_banner {
-    margin-top: 25px;
 }
 
 body {
     background: linear-gradient(30deg, rgba(225,232,177,1) 0%, rgba(255,255,255,1) 100%);
 }
 
+
+
+/* Type elements */
+
 h1 {
     font-family: 'Bungee', cursive;
     text-align: center;
-    font-size: 1.65em;
+    font-size: 26px;
+    color: #6c8d3b;
+}
+
+h2 {
+    font-family: 'Oxygen', sans-serif;
+    font-weight: 700;
+}
+
+h3 {
+    font-family: 'Oxygen', sans-serif;
+    font-weight: 700;
+    color: #6c8d3b;
+}
+
+p {
+    font-family: 'Oxygen', sans-serif;
+    color: #172426;
+    line-height: 1.5em;
+}
+
+a {
+    font-family: 'Oxygen', sans-serif;
+    font-weight: 700;
+    color: #6c8d3b;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #bfd330;
+}
+
+a:active {
+    color: #172426;
+}
+
+strong {
+    font-family: 'Oxygen', sans-serif;
+    font-weight: 700;
+}
+
+hr {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.hr-viewport-hide {
+    display: none;
+}
+
+
+
+/* Stylized type elements*/
+
+.top-banner h1 {
+    margin-bottom: 15px;
+}
+
+.top-banner p {
+    font-weight: 700;
+    margin-bottom: 22px;
+}
+
+.intro-content p {
+    font-weight: normal;
+}
+
+.contact-details {
+    font-size: .85em;
+    font-family: 'Oxygen', sans-serif;
+}
+
+.footer p {
+    font-size: .85em;
+    font-weight: 700;
+    display: inline-block;
+    float: left;
+    text-align: left;
+    padding-top: 2px;
+}
+
+.go-to-top-button a {
+    display: inline-block;
+    padding: 3px;
+    float: right;
+    color: #FFFFFF;
+    background-color: #6c8d3b;
+    border-radius: 5px;
+    padding: 10px 10px 8px 12px;
+    margin-top: 10px;
+    margin-left: 15px;
+    font-size: .75em;
+    font-family: 'Bungee', cursive;
+    text-decoration: none;
+    letter-spacing: 2px;
+}
+
+.go-to-top-button a:hover {
+    background-color: #172426;
+}
+
+.go-to-top-button a:active {
+    background: rgb(23,36,38);
+    background: linear-gradient(0deg, rgba(23,36,38,1) 0%, rgba(108,141,59,1) 100%);
+}
+
+.main-nav a:hover {
+    background-color: #bfd330;
+}
+
+.main-nav a:active {
+    background: rgb(108,141,59);
+    background: linear-gradient(0deg, rgba(108,141,59,1) 0%, rgba(191,211,48,1) 100%);
+}
+
+
+
+/* Content blocks */
+
+.container {
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 90%;
+    border: 1px solid #bfd330;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    padding: 0 15px 0 15px;
+    font-family: 'Oxygen', sans-serif;
+    color: #172426;
+    line-height: 1.5em;
+}
+
+.top-banner {
+    margin: auto;
+    width: 90%;
+    text-align: center;
+}
+
+.intro-and-profile-photo {
+    margin: auto;
+    width: 90%;
+    text-align: center;
+}
+
+.profile-photo {
+    margin-top: 20px;
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.intro-content {
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    padding: none;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.intro-content h3{
+    color: #6c8d3b;
+    font-size: 28px;
+}
+
+.intro-content p{
+    color: #172426;
+}
+
+.main-nav a {
+    display: block;
+    padding: 10px;
+    color: #FFFFFF;
+    background-color: #6c8d3b;
+    border-radius: 5px;
+	margin-top: 15px;
+    margin-bottom: 15px;
+    font-family: 'Bungee', cursive;
+    text-decoration: none;
+    letter-spacing: 2px;
+}
+
+.experience-col-1 {
+    width: 50%;
+    float: left;
+    margin-bottom: 25px;
+}
+
+.experience-col-2 {
+    width: 50%;
+    float: right;
+    margin-bottom: 25px;
+}
+
+.experience-col-1 ul,
+.experience-col-2 ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.portfolio-content {
+    text-align: center;
+    margin-top: 25px;
+}
+
+.portfolio-card h3 {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.portfolio-card p {
+    margin-top: 5px;
+    bottom: 25px;
+}
+
+.portfolio-image {
+    margin-top: 25px;
+    width: 100%;
+}
+
+.contact-content {
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 80px;
+    padding-bottom: 10px;
 }
 
 .footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.footer,
+.footer-content{
     font-family: 'Oxygen', sans-serif;
-    text-align: center;
-    padding-bottom: 25px;
+    text-align: left;
+    background-color: #bfd330;
+    padding-bottom: 4px;
+}
+
+.footer-content {
+    width: 90%;
+    margin: auto;
+}
+
+#footer-nav {
+    display: none;
+}
+
+
+
+/* Clearfix */
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+
+
+/* Media queries */
+
+@media (min-width: 760px) {
+
+    .container {
+        padding: 15px 35px 15px 35px;
+    }
+    
+    .main-nav a {
+        display: inline-block;
+        padding: 10px;
+        color: #FFFFFF;
+        background-color: #6c8d3b;
+        border-radius: 5px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        font-family: 'Bungee', cursive;
+        text-decoration: none;
+        letter-spacing: 1px;
+    }
+
+    .intro-content {
+        float: left;
+        margin: auto;
+        margin-top: 0px;
+        height: 100%;
+        max-width: 68%;
+        height: 100%;
+    }
+
+    .profile-photo {
+        float: right;
+        margin: auto;
+        margin-top: 20px;
+        max-width: 30%;
+    }
+
+    .about-content {
+        margin-top: 15px;
+    }
+
+    .portfolio-card {
+        width: 45%;
+    }
+
+    .portfolio-card-1 {
+        float: left;
+    }
+
+    .portfolio-card-2 {
+        float: right;
+    }
+
+    .portfolio-card-3 {
+        float: left;
+    }
+
+    .portfolio-card-4 {
+        float: right;
+    }
+
+    .portfolio-card-5 {
+        float: left;
+    }
+
+    .portfolio-card-6 {
+        float: right;
+    }
+
+    .contact-content {
+        text-align: center;
+        margin-top: 25px;
+        margin-bottom: 80px;
+        padding: 15px 15px 30px 15px;
+    }
+
+    .contact-details {
+        display: inline;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    #footer-nav {
+        display: inline;
+    }
+
+  #footer-nav a {
+        float: right;
+        color: #6c8d3b;
+        margin: 19px 5px 15px 5px;
+        font-size: .75em;
+        font-family: 'Oxygen', sans-serif;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+
+    #footer-nav a:hover {
+        color: #FFFFFF;
+    }
+    
+    #footer-nav a:active {
+        color: #172426;
+    }
+
+
+@media (min-width: 1024px) {
+
+    .container {
+        padding: 15px 35px 15px 35px;
+        max-width: 1080px;
+    }
+
+    .top-banner {
+        width: 100%;
+        background-color: #FFFFFF;
+        height: 82px;
+        border-bottom: 1px solid #6c8d3b;
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+
+    .top-banner-container {
+        width: 90%;
+        max-width: 1080px;
+        margin: auto;
+    }  
+
+    .viewport-1024-main-nav {
+        float: left;
+    }
+
+    .viewport-1024-main-nav h1 {
+        margin-bottom: 0;
+        text-align: left;
+        font-size: 20px;
+        line-height: 1em;
+    }
+
+    .viewport-1024-main-nav p {
+        text-align: left;
+        font-size: 12px;
+        margin-top: 0;
+    }
+
+    .main-nav {
+        float: right;
+    }
+    
+    .main-nav a {
+        display: inline-block;
+        padding: 10px;
+        color: #FFFFFF;
+        background-color: #6c8d3b;
+        border-radius: 5px;
+        margin-left: 3px;
+        margin-top: 23px;
+        margin-bottom: 10px;
+        font-size: 10px;
+        font-family: 'Bungee', cursive;
+        text-decoration: none;
+        letter-spacing: 1px;
+    }
+
+    .intro-and-profile-photo {
+        margin-top: 116px;
+        margin-bottom: 25px;
+        clear: both;
+        max-width: 1080px;
+    }
+
+    .intro-content {
+        float: left;
+        max-width: 68%;
+    }
+
+    .intro-content h3 {
+        margin-top: 60px;
+        font-size: 2em;
+        font-weight: 700;
+    }
+
+    .intro-content p {
+        font-weight: normal;
+    }
+
+    .profile-photo {
+        margin-top: 0;
+        float: right;
+        max-width: 30%;
+    }
+
+    .about-content {
+        margin-top: 15px;
+    }
+
+    .viewport-1024-experience-cols-right {
+        width: 17%;
+        float: right;
+    }
+
+    .viewport-1024-experience-p-left {
+        width: 80%;
+        float: left;
+    }
+
+    .experience-col-1 {
+        width: 100%;
+        float: none;
+        margin-top: 0;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+    
+    .experience-col-2 {
+        width: 100%;
+        float: none;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    .experience-col-1 h3,
+    .experience-col-2 h3 {
+        margin-bottom: 5px;
+    }
+
+    .portfolio-card {
+        width: 30%;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .portfolio-col-1 {
+        width: 30%;
+        float: left;
+    }
+
+    .portfolio-col-2 {
+        width: 30%;
+    }
+
+    .portfolio-col-3 {
+        width: 30%;
+        float: right;
+    }
+
+    .contact-content {
+        text-align: center;
+        margin-top: 25px;
+        margin-bottom: 35px;
+        padding-bottom: 30px;
+    }
+
+    .contact-details {
+        display: inline;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    .footer {
+        position: relative;
+        width: 100%;
+    }
+
+    .footer-content {
+        max-width: 1080px;
+    }
+
+    #footer-nav {
+        display: inline;
+    }
+
+    #footer-nav a {
+        float: right;
+        color: #6c8d3b;
+        margin: 19px 5px 15px 5px;
+        font-size: .75em;
+        font-family: 'Oxygen', sans-serif;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+
+    #footer-nav a:hover {
+        color: #FFFFFF;
+    }
+    
+    #footer-nav a:active {
+        color: #172426;
+    }
 }
