@@ -371,13 +371,6 @@ hr {
 
     .portfolio-card-container {
         column-count: 2;
-        -webkit-column-count: 2;
-        -moz-column-count: 2;
-        column-count: 2;
-        column-width: 45%;
-        -webkit-column-width: 45%;
-        -moz-column-width: 45%;
-        column-width: 45%;
     }
 
     .portfolio-image {
@@ -597,14 +590,7 @@ hr {
     
     .portfolio-card-container {
         column-count: 3;
-        -webkit-column-count: 3;
-        -moz-column-count: 3;
-        column-count: 3;
-        column-width: 30%;
-        -webkit-column-width: 30%;
-        -moz-column-width: 30%;
-        column-width: 30%;
-    }
+   }
 
     .portfolio-card {
         display: inline-block;
